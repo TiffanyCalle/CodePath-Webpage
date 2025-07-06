@@ -4,6 +4,7 @@
     <head>
      <link rel="stylesheet" href="styles.css" />
         
+        <link rel="icon" href="/images/heartFavicon.png" type="image/png">
         <title>My WEB101 Website</title>
         <style>
             /* Style rules go here. */
@@ -11,27 +12,28 @@
     </head>
     
 
+
+
+    <!-- navigation bar -->
     <body>
     
         <nav class="navbar">
         <div class="logo">Wellness Expo</div>
             <ul class="nav-links">
-                <li><a href="#mission">Our Mission</a></li>
+                <li><a href="#mission">About Us</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#speakers">Speakers</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#more">More Info</a></li>
             </ul>
         </nav>
         
         <img id="header-img" src="./img/logo500.png"/>
         <h1>Tiffany's WEB101 Website</h1>
-        <h2>Wellness & Fitness Expo</h2>
+        <div class="title">Wellness & Fitness Expo</div>
 
 
-      
-        
-           
-    
+        <!-- mission, image  -->
 
         <h2>Our Mission</h2>
 
@@ -47,18 +49,20 @@
         </div>
          
 
-        <div class="horizontal-flex" style="margin-top: 30px; margin-bottom: 30px;">
+        <!-- schedule, contact, social media  -->
+        <div class="horizontal-flex" style="margin-top: 40px; margin-bottom: 50px;">
 
              <ul class="event-details">
                 <li><b>Date:</b> <i>July 30, 2025</i></li>
                 <li><b>Time:</b> <i>1:00pm</i></li>
                 <li><b>Location:</b> <i>Dumbo Park</i></li>
             </ul>
+              
 
             <div style="text-align: center;">
                 <p style="margin-bottom: 15px;"> Email: wellness.events@gmail.com</p>
                 <button type="button" style="margin-bottom: 20px; font-size: 18px; padding: 10px 20px; font-family: 'Courier New', Courier, monospace;">Contact Us</button>
-                <div>
+                <div style="margin-bottom: 20px;">
                     <img src="/images/iglogo.avif" alt= " instagram " width="30" style="margin-right: 10px;"/>
                     <img src="/images/fblogo.png" alt= " facebook " width="30" style="margin-right: 10px;"/>
                     <img src="/images/twitter logo.png" alt= "twitter" width="30" height="30" style="margin-right: 10px;"/>
@@ -66,7 +70,48 @@
                 </div>
             </div>
 
+        </div>
 
+
+
+
+
+        <!-- guest speakers flexbox -->
+
+        <h2 style="margin-bottom: 70px;">Guest Speakers</h2>
+        <div class="horizontal-flex">
+
+
+         <img src="/images/jayshetty.jpg" alt="Jay Shetty" class="guest-images" />
+         <div class="vertical-flex">
+             <h3>Jay Shetty</h3>
+                <p>Join Jay Shetty, best-selling author, podcast host, and former monk, as he shares powerful insights on how to live with intention, find inner peace, and build habits for lasting happiness. His motivational talks at the Wellness Expo will leave you feeling grounded, energized, and ready to lead a purpose-driven life. ✨🧘‍♂️💬</p>
+         </div>
+
+         <img src="/images/leana.jpg" alt="Leana Deeb" class="guest-images"/>
+         <div class="vertical-flex">
+            <h3>Leana Deeb</h3>
+                <p> Join Leana Deeb, fitness influencer, wellness coach, and entrepreneur, as she brings her passion for physical and mental strength to the Fitness Expo. Known for inspiring millions to embrace a healthy lifestyle through consistency and self-love, Leanna will share her journey, workout wisdom, and motivational insights to help you take charge of your fitness goals — inside and out. 🏋️‍♀️🧠💫 </p>
+         </div>
+
+         <img src="/images/jeff.jpg" alt="Jeff Nippard" class="guest-images"/>
+         <div class="vertical-flex">
+            <h3>Jeff Nippard</h3>
+            <p>Don't miss Jeff Nippard, natural bodybuilder, fitness coach, and science-based training expert, at the Fitness Expo! With a background in exercise science and years of experience in strength training and bodybuilding, Jeff combines research with real-world results. His talks will dive into effective workout strategies, muscle-building techniques, and evidence-backed tips to help you train smarter, not just harder. 🏋️‍♂️📚🔥</p>
+         </div>
+
+
+        </div>
+
+        
+        <h2 style="margin-bottom: 70px; margin-top: 70px;">Why is mental and physical health important?</h2>
+        <div class="video-container">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/Cg_GW7yhq20"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
         </div>
 
 
@@ -74,44 +119,59 @@
 
 
 
-        <div class="horizontal-flex">
-            <h3>Jay Shetty</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro architecto ab culpa dolorem, omnis veniam non labore libero debitis neque ut eius dignissimos fugiat sapiente voluptate, cumque nesciunt. Facilis, cum!</p>
+        <h2 style="margin-bottom: 70px; margin-top: 70px;">Activities</h2>
+        <!-- first branch of events -->
+        <div class="horizontal-flex" style="margin-top: 40px;">
 
-            <h3>Guest Speaker 2 </h3>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo omnis molestias alias ut quos, corrupti neque eum aliquam reiciendis, unde inventore temporibus, repudiandae ab aperiam saepe laboriosam voluptatum enim iste.</p>
+            <div class="vertical-flex">
+                <h3>Fitness Classes</h3>
+                <p>Join us for free fitness courses — from calming yoga and toning Pilates to high-energy weightlifting sessions! No experience needed, just bring your energy and discover the workout you love. 💪✨ </p>
+               
+            </div>
 
-            <h3>Guest Speaker 3 </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde maiores voluptas iusto veritatis minima consequatur inventore, ea molestiae fuga atque beatae exercitationem temporibus illum. Quidem inventore animi error a.</p>
-        </div>
+            <div class="vertical-flex">
+                <h3>Healthy Food Sampling</h3>
+                    <p>Enjoy healthy food samples from your favorite local restaurants. From fresh salads to protein-packed bites, discover delicious ways to eat clean and feel great — one bite at a time. 🍴🌱
+                    </p>  
+                    <img src="/images/foodSampling.webp" style="height: 150px; width: 180px; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;" />
+                     
+            </div>
 
-
-        <div class="horizontal-flex">
-
-            <h2>Fitness Classes</h2>
-            <p>Description of event activity.</p>
-            <img alt="Image description" src="./img/example.png"/>
-
-            <h2>Healthy Food Sampling</h2>
-            <p>Description of event activity.</p>
-
-    
-            <h2>Guided Meditation</h2>
-            <p>Description of event activity.</p>
+            <div class="vertical-flex">
+                <h3>Guided Meditation</h3>
+                <p>Experience guided meditation sessions led by expert coaches. Whether you're new to mindfulness or a seasoned pro, take a moment to relax, reset, and reconnect — all for free. ✨🕊️</p>
+            </div>
 
         </div>
+        
+
+        <!-- second branch of events -->
+        <div class="horizontal-flex" style="margin-top: 30px;">
+
+            <div class="vertical-flex">
+                <h3>Pop-Up Shops</h3>
+                <p>Stop by exclusive pop-up shops from top brands like Gymshark, Nike, and Alo Yoga. Explore the latest in activewear, grab limited-time deals, and upgrade your fitness wardrobe in style! 🧘‍♀️🏋️‍♂️✨</p>
+                <h4>Our Sponsors:</h4>
+                <div class="horizontal-flex">
+               
+                    <img src="/images/gymshark.webp" class="sponsors-img"/>
+                    <img src="/images/alo.jpg" class="sponsors-img"/>
+                    <img src="/images/nike.webp" class="sponsors-img"/>
+                </div>
+            </div>
 
 
-        <div class="horizontal-flex">
+            <div class="vertical-flex">
+                <h3>Wellness Challenges</h3>
+                <p>Test your strength, balance, and focus in quick, fun wellness games — from plank contests to mini obstacle runs! Compete with friends and win exciting prizes while boosting your fitness. Let the games begin! 💪🎉</p>
+            </div>
 
-            <h2>Pop-Up Shops</h2>
-                <p>Description of event activity.</p>
 
-            <h2>Wellness Challenges</h2>
-                <p>Description of event activity.</p>
-
-            <h2>Kids Wellness Corner</h2>
-                <p>Description of event activity.</p>
+            <div class="vertical-flex">
+                <h3>Kids Wellness Corner</h3>
+                <p>Let your little ones stay active and engaged in our Kids Wellness Corner — filled with fun games, movement activities, and healthy snacks! Supervised by friendly staff, it's a safe space for kids to play while parents enjoy the event stress-free. 🎨🤸‍♂️🧃</p>
+                <img src="/images/tugofwar.jpg" class="kids-img"/>
+            </div>
 
         </div>
 
