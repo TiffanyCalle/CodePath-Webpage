@@ -3,46 +3,47 @@
 
     <head>
      <link rel="stylesheet" href="styles.css" />
-        
-        <link rel="icon" href="/images/heartFavicon.png" type="image/png">
+     <link rel="icon" href="/images/heartFavicon.png" type="image/png">
         <title>My WEB101 Website</title>
-        <style>
-            /* Style rules go here. */
-        </style>
+        <script type="text/javascript" src="script.js" defer></script>
     </head>
     
 
-
-
-    <!-- navigation bar -->
     <body>
     
+        
+        <!-- navigation bar -->
+
         <nav class="navbar">
-        <div class="logo">Wellness Expo</div>
+            <div class="logo">Wellness & Fitness Expo</div>
             <ul class="nav-links">
                 <li><a href="#mission">About Us</a></li>
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#more">Why?</a></li>
                 <li><a href="#activities">Activities</a></li>
-                <li><a href="#more">More Info</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#links">More</a></li>
+                
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
             </ul>
         </nav>
         
-        <img id="header-img" src="./img/logo500.png"/>
+       
         <h1>Tiffany's WEB101 Website</h1>
         <div class="title">Wellness & Fitness Expo</div>
 
 
         <!-- mission, image  -->
 
-        <h2>Our Mission</h2>
+        <h2 id="mission">Our Mission</h2>
 
         <div class="horizontal-flex">
             <div class="vertical-flex"> 
 
                 <p>The purpose of my website is to educate and empower the community by providing accessible, reliable guidance on health, fitness, and overall wellness. It serves as a supportive resource for individuals taking their first steps toward a healthier lifestyle, offering a wide range of information—all aimed at helping individuals make informed decisions about their well being.</p>
-                <button type="button" style="font-size: 18px; padding: 10px 20px; font-family: 'Courier New', Courier, monospace;">Get Tickets!</button>
-
+                <button type="button" style="font-size: 18px; padding: 10px 20px; font-family: 'Courier New', Courier, monospace; background-color:  #999b7a; color: white; border: 2px solid white; padding: 8px 16px; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;">Get Tickets!</button>
+               
             </div>
 
             <img src="/images/front_image.jpg" alt="fitness community" class="image-one"  width="500"/>
@@ -50,18 +51,16 @@
          
 
         <!-- schedule, contact, social media  -->
-        <div class="horizontal-flex" style="margin-top: 40px; margin-bottom: 50px;">
-
+        <div id="schedule" class="horizontal-flex" style="margin-top: 40px; margin-bottom: 50px;">
              <ul class="event-details">
                 <li><b>Date:</b> <i>July 30, 2025</i></li>
                 <li><b>Time:</b> <i>1:00pm</i></li>
                 <li><b>Location:</b> <i>Dumbo Park</i></li>
             </ul>
               
-
             <div style="text-align: center;">
                 <p style="margin-bottom: 15px;"> Email: wellness.events@gmail.com</p>
-                <button type="button" style="margin-bottom: 20px; font-size: 18px; padding: 10px 20px; font-family: 'Courier New', Courier, monospace;">Contact Us</button>
+                <button type="button" style="margin-bottom: 20px; font-size: 18px; padding: 10px 20px; font-family: 'Courier New', Courier, monospace; background-color: #999b7a; color: white; border: 2px solid white; padding: 8px 16px; border-radius: 10px; cursor: pointer; transition: all 0.3s ease;">Contact Us</button>
                 <div style="margin-bottom: 20px;">
                     <img src="/images/iglogo.avif" alt= " instagram " width="30" style="margin-right: 10px;"/>
                     <img src="/images/fblogo.png" alt= " facebook " width="30" style="margin-right: 10px;"/>
@@ -69,58 +68,54 @@
 
                 </div>
             </div>
-
         </div>
-
-
-
 
 
         <!-- guest speakers flexbox -->
 
-        <h2 style="margin-bottom: 70px;">Guest Speakers</h2>
-        <div class="horizontal-flex">
+        <h2 id="speakers" style="margin-bottom: 70px;">Guest Speakers</h2>
+            <div class="horizontal-flex">
 
+                <img src="/images/jayshetty.jpg" alt="Jay Shetty" class="guest-images" />
+                <div class="vertical-flex">
+                    <h3>Jay Shetty</h3>
+                        <p>Join Jay Shetty, best-selling author, podcast host, and former monk, as he shares powerful insights on how to live with intention, find inner peace, and build habits for lasting happiness. His motivational talks at the Wellness Expo will leave you feeling grounded, energized, and ready to lead a purpose-driven life. ✨🧘‍♂️💬</p>
+                </div>
 
-         <img src="/images/jayshetty.jpg" alt="Jay Shetty" class="guest-images" />
-         <div class="vertical-flex">
-             <h3>Jay Shetty</h3>
-                <p>Join Jay Shetty, best-selling author, podcast host, and former monk, as he shares powerful insights on how to live with intention, find inner peace, and build habits for lasting happiness. His motivational talks at the Wellness Expo will leave you feeling grounded, energized, and ready to lead a purpose-driven life. ✨🧘‍♂️💬</p>
-         </div>
+                <img src="/images/leana.jpg" alt="Leana Deeb" class="guest-images"/>
+                <div class="vertical-flex">
+                    <h3>Leana Deeb</h3>
+                        <p> Join Leana Deeb, fitness influencer, wellness coach, and entrepreneur, as she brings her passion for physical and mental strength to the Fitness Expo. Known for inspiring millions to embrace a healthy lifestyle through consistency and self-love, Leanna will share her journey, workout wisdom, and motivational insights to help you take charge of your fitness goals — inside and out. 🏋️‍♀️🧠💫 </p>
+                </div>
 
-         <img src="/images/leana.jpg" alt="Leana Deeb" class="guest-images"/>
-         <div class="vertical-flex">
-            <h3>Leana Deeb</h3>
-                <p> Join Leana Deeb, fitness influencer, wellness coach, and entrepreneur, as she brings her passion for physical and mental strength to the Fitness Expo. Known for inspiring millions to embrace a healthy lifestyle through consistency and self-love, Leanna will share her journey, workout wisdom, and motivational insights to help you take charge of your fitness goals — inside and out. 🏋️‍♀️🧠💫 </p>
-         </div>
+                <img src="/images/jeff.jpg" alt="Jeff Nippard" class="guest-images"/>
+                <div class="vertical-flex">
+                    <h3>Jeff Nippard</h3>
+                        <p>Don't miss Jeff Nippard, natural bodybuilder, fitness coach, and science-based training expert, at the Fitness Expo! With a background in exercise science and years of experience in strength training and bodybuilding, Jeff combines research with real-world results. His talks will dive into effective workout strategies, muscle-building techniques, and evidence-backed tips to help you train smarter, not just harder. 🏋️‍♂️📚🔥</p>
+                </div>
 
-         <img src="/images/jeff.jpg" alt="Jeff Nippard" class="guest-images"/>
-         <div class="vertical-flex">
-            <h3>Jeff Nippard</h3>
-            <p>Don't miss Jeff Nippard, natural bodybuilder, fitness coach, and science-based training expert, at the Fitness Expo! With a background in exercise science and years of experience in strength training and bodybuilding, Jeff combines research with real-world results. His talks will dive into effective workout strategies, muscle-building techniques, and evidence-backed tips to help you train smarter, not just harder. 🏋️‍♂️📚🔥</p>
-         </div>
-
-
-        </div>
+            </div>
 
         
-        <h2 style="margin-bottom: 70px; margin-top: 70px;">Why is mental and physical health important?</h2>
-        <div class="video-container">
-        <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/Cg_GW7yhq20"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-        </div>
+            <h2 id="more" style="margin-bottom: 70px; margin-top: 70px;">Why is mental and physical health important?</h2>
+            <div class="video-container">
+            <iframe style="border-radius: 20px" width =560 height="315"
+                src="https://www.youtube.com/embed/Cg_GW7yhq20"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            </div>
 
 
 
 
 
 
-        <h2 style="margin-bottom: 70px; margin-top: 70px;">Activities</h2>
+        <h2 id="activities" style="margin-bottom: 70px; margin-top: 70px;">Activities</h2>
+
         <!-- first branch of events -->
+
         <div class="horizontal-flex" style="margin-top: 40px;">
 
             <div class="vertical-flex">
@@ -133,7 +128,7 @@
                 <h3>Healthy Food Sampling</h3>
                     <p>Enjoy healthy food samples from your favorite local restaurants. From fresh salads to protein-packed bites, discover delicious ways to eat clean and feel great — one bite at a time. 🍴🌱
                     </p>  
-                    <img src="/images/foodSampling.webp" style="height: 150px; width: 180px; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;" />
+                    <img src="/images/foodSampling.webp" class="foodSamp-img" />
                      
             </div>
 
@@ -150,7 +145,7 @@
 
             <div class="vertical-flex">
                 <h3>Pop-Up Shops</h3>
-                <p>Stop by exclusive pop-up shops from top brands like Gymshark, Nike, and Alo Yoga. Explore the latest in activewear, grab limited-time deals, and upgrade your fitness wardrobe in style! 🧘‍♀️🏋️‍♂️✨</p>
+                    <p>Stop by exclusive pop-up shops from top brands like Gymshark, Nike, and Alo Yoga. Explore the latest in activewear, grab limited-time deals, and upgrade your fitness wardrobe in style! 🧘‍♀️🏋️‍♂️✨</p>
                 <h4>Our Sponsors:</h4>
                 <div class="horizontal-flex">
                
@@ -163,13 +158,13 @@
 
             <div class="vertical-flex">
                 <h3>Wellness Challenges</h3>
-                <p>Test your strength, balance, and focus in quick, fun wellness games — from plank contests to mini obstacle runs! Compete with friends and win exciting prizes while boosting your fitness. Let the games begin! 💪🎉</p>
+                    <p>Test your strength, balance, and focus in quick, fun wellness games — from plank contests to mini obstacle runs! Compete with friends and win exciting prizes while boosting your fitness. Let the games begin! 💪🎉</p>
             </div>
 
 
             <div class="vertical-flex">
                 <h3>Kids Wellness Corner</h3>
-                <p>Let your little ones stay active and engaged in our Kids Wellness Corner — filled with fun games, movement activities, and healthy snacks! Supervised by friendly staff, it's a safe space for kids to play while parents enjoy the event stress-free. 🎨🤸‍♂️🧃</p>
+                    <p>Let your little ones stay active and engaged in our Kids Wellness Corner — filled with fun games, movement activities, and healthy snacks! Supervised by friendly staff, it's a safe space for kids to play while parents enjoy the event stress-free. 🎨🤸‍♂️🧃</p>
                 <img src="/images/tugofwar.jpg" class="kids-img"/>
             </div>
 
@@ -177,20 +172,85 @@
 
 
 
+     <!-- rsvp--> 
 
-        <h2>Links</h2>
-
-        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
-        <a class="block" href="https://www.codepath.org">
-            <article>
-                <h3>Link title</h3>
-                <p>Link description</p>
-            </article>
-        </a>
-            
-        <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
-        <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
-
+        <div id="rsvp">
+        <h2 style="margin-bottom: 70px; margin-top: 70px;">RSVP</h2>
+    
+        <div class="rsvp-container">
+        <div class="rsvp-para">
+            <p>Join us for a day of inspiration and transformation at our Wellness and Fitness Expo!
+             Discover tips on healthy living, meet wellness experts, and connect with a community focused on well-being. Whether you're just starting your fitness journey or looking to stay motivated, this event is for you!
+             Please RSVP below to reserve your spot—we can’t wait to see you there!</p>
         </div>
+        <div class="rsvp-participants">
+            <p>🎟️ Katherine from Brooklyn has RSVP'd.</p>
+            <p>🎟️ Fabiana from New York has RSVP'd.</p>
+            <p>🎟️ Arun from New Jersey has RSVP'd.</p>
+            <p id="rsvp-count">⭐ 3 people have RSVP'd to this event!</p>
+        </div>
+        </div>
+
+        <!--- Sign RSVP Form --->
+
+        <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <label for="name"><h3>Name:</h3></label>
+                <input type="text" id="name" name="name" required><br><br>
+            <label for="email"><h3>Email:</h3></label>
+                <input type="email" id="email" name="email" required><br><br>
+            <label for="state"><h3>State:</h3></label>
+                <input type="text" id="state" name="state" required><br><br>
+        </form>
+
+        <!-- Submit button -->
+
+        <button id="rsvp-button">Submit RSVP</button>
+        </div>      
+        </div>
+
+        <!-- success modal
+
+        Purpose:
+        - Modal that appears when a user successfully signs up for the event
+        - Contains a personalized message and image
+
+        --> 
+
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <div id="modal-item">
+                    <p id= "modal-text" style="padding: 40px;"> 🎉 Thanks for RSVPing! We’ll see you at the event.</p>
+                </div>
+
+            <div id="modal-item">
+                <img src="./images/modal-img.png" class="modal-item"/>
+            </div>
+        </div>
+        </div>
+
+
+        <div id="links">
+            <h2>Links</h2>
+                <a class="block" href="https://www.codepath.org">
+                    <article>
+                        <h3>Visit Our Site</h3>
+                        <p>More Events</p>
+                    </article>
+                </a>
+        </div>
+
+
+        <!-- footer -->
+        
+        <footer class="footer">
+            <p>&copy; 2025 Wellness & Fitness Expo. </p>
+        </footer>
+
+
+        <!-- script -->
+
+        <script src="index.js"></script>
+
     </body>
 </html>
